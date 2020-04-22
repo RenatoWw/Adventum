@@ -2,7 +2,8 @@
 // TODO
 /*
 input validation
-name char limit
+verification name char limit
+talk options ("who are you?" "what you want me to do?")
 help menu
 kingdom and king name generator
 option for generate protagonist name
@@ -44,8 +45,6 @@ __________  x . y ascii (generated square)
 #include "citizen.h"
 
 int main() {
-    char name[20];
-    int action;
     puts("Bem-vindo ao text adventure game feito em C");
     puts("Qual é o nome de seu personagem?");
     printf("> ");
@@ -67,5 +66,4 @@ int main() {
             citizen(name, action);
             break;
     }
-    return 0;
 }
