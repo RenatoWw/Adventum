@@ -4,7 +4,6 @@
 input validation
 verification name char limit
 talk options ("who are you?" "what you want me to do?")
-help menu
 kingdom and king name generator
 option for generate protagonist name
 more classes
