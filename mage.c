@@ -1,5 +1,11 @@
 #include "mage.h"
 
+void mTalk();
+void mTower();
+void mLookAround();
+void mCave();
+// m = mage
+
 void mage(char name[20], int action) {
     printf("%s é um mago do reino de Eruthe, sua missão de acordo com o Rei Yeoman Renoldus é exterminar um bando de minotauros em uma torre perto do reino.\n", name);
     while(1) {
@@ -10,16 +16,32 @@ void mage(char name[20], int action) {
         printf("> ");
         scanf("%d", &action);
         if(action == 1) {
-            puts("Você pergunta ao Rei o que precisa fazer, ele diz que a sua tarefa é exterminar um bando de minotauros perto dali");
+            mTalk();
             continue;
         } else if(action == 2) {
-            puts("Você segue para a torre, no caminho encontra uma caverna, com uma voz no profundo escuro da caverna exclamando por ajuda.\nO que você faz?");
+            mTower();
             break;
         } else {
-            puts("Você está no palácio do Rei Yeoman Renoldus.");
+            mLookAround();
             continue;
         }
     }
+}
+
+void mTalk() {
+    puts("Você pergunta ao Rei o que precisa fazer, ele diz que a sua tarefa é exterminar um bando de minotauros perto dali");
+}
+
+void mTower() {
+    puts("Você segue para a torre, no caminho encontra uma caverna, com uma voz no profundo escuro da caverna exclamando por ajuda.");
+    mCave();
+}
+
+void mLookAround() {
+    puts("Você está no palácio do Rei Yeoman Renoldus.");
+}
+
+void mCave() {
     while(1) {
         puts("1 - Entrar na escura caverna");
         puts("2 - Evitar a caverna e ir para a torre");

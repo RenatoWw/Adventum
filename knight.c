@@ -1,5 +1,11 @@
 #include "knight.h"
 
+void kTalk();
+void kForest();
+void kLookAround();
+void kDog();
+// k = knight
+
 void knight(char name[20], int action) {
     printf("%s é um cavaleiro do reino de Eruthe, sua missão de acordo com o Rei Yeoman Renoldus é matar um orc que está se escondendo na floresta.\n", name);
     while(1) {
@@ -10,16 +16,32 @@ void knight(char name[20], int action) {
         printf("> ");
         scanf("%d", &action);
         if(action == 1) {
-            puts("Você pergunta ao Rei o que precisa fazer, ele diz que a sua tarefa é matar um orc escondido na floresta em troca de uma recompensa.");
-           continue;
+            kTalk();
+            continue;
         } else if(action == 2) {
-            puts("Você vai para a floresta procurando pelo orc, você se depara com um cachorro com a pata presa em uma armadilha de urso, o que você faz?");
+            kForest();
             break;
         } else {
-            puts("Vocẽ está no palácio do Rei Yeoman Renoldus.");
-           continue;
+            kLookAround();
+            continue;
         }
     }
+}
+
+void kTalk() {
+    puts("Você pergunta ao Rei o que precisa fazer, ele diz que a sua tarefa é matar um orc escondido na floresta em troca de uma recompensa.");
+}
+
+void kForest() {
+    puts("Você vai para a floresta procurando pelo orc, você se depara com um cachorro com a pata presa em uma armadilha de urso, o que você faz?");
+    kDog();
+}
+
+void kLookAround() {
+    puts("Vocẽ está no palácio do Rei Yeoman Renoldus.");
+}
+
+void kDog() {
     while(1) {
         puts("1 - Libertar o cachorro da armadilha");
         puts("2 - Seguir o seu caminho e esquecer o cachorro");
