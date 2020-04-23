@@ -4,6 +4,8 @@
 input validation
 verification name char limit
 talk options ("who are you?" "what you want me to do?")
+guilds
+unlock new phrases from conversations with npcs (continue the dialogue based on the previous question)
 kingdom and king name generator
 option for generate protagonist name
 more classes
