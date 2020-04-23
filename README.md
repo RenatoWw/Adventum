@@ -7,6 +7,6 @@ Para jogar é necessário clonar o repositório com o git clone:
 
 Agora, entre no diretório com `cd Adventum` e compile e execute com os comandos a seguir.
 ```
-gcc main.c knight.c mage.c citizen.c
+gcc main.c knight.c mage.c citizen.c utilities.c
 ./a.out
 ```
