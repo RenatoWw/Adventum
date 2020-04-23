@@ -3,7 +3,9 @@
 /*
 input validation
 verification name char limit
-talk options ("who are you?" "what you want me to do?")
+critical attack percentage, and block percentage in battles
+inventory
+history generator
 guilds
 unlock new phrases from conversations with npcs (continue the dialogue based on the previous question)
 kingdom and king name generator
@@ -16,9 +18,6 @@ pt-br, english support
 weapon selection
 knight: sword, axe, shield
 mage: wand, staff
--------------------
-inventory
-history generator
 -------------------
 continuar, esquerda, direita, voltar
 continue, left, right, back
