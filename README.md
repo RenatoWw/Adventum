@@ -1,40 +1,48 @@
 # Adventum
 
-Adventum é um text adventure game escrito em C.
+> Adventum é um text adventure game escrito em C.
 
-Como jogar:
+# Requisitos 
+> :octocat: [git](https://git-scm.com/) 
 
-### Linux e OSX
+> 🇨 [gcc](https://gcc.gnu.org/)
 
-Requisitos: [git](https://git-scm.com/) e [gcc](https://gcc.gnu.org/)
+# Linux e OSX
 
-Você pode instalar-los a partir do seu package manager da distribuição ou na loja de aplicativos.
-Não vou entrar muito nisto aqui.
+1. Clone o repositório com o git clone:
 
-Para jogar é necessário clonar o repositório com o git clone:
 `git clone https://github.com/RenatoWw/Adventum`
 
-Agora, entre no diretório com `cd Adventum` e compile e execute com os comandos a seguir.
+2. Agora, entre no diretório com cd:
 
+`cd Adventum`.
 
-gcc main.c knight.c mage.c citizen.c utilities.c
+3. Compile:
 
-./a.out
+`gcc main.c knight.c mage.c citizen.c utilities.c`
+
+4. Rode:
+
+`./a.out`
 
 ### Windows
 
-No Windows é um pouco mais trabalhoso.
+1. Clone o repositório com o git clone:
 
-Primeiro, faça download do repositório clicando em **Clone or Download**. Baixe em zip, e extraia.
+`git clone https://github.com/RenatoWw/Adventum`
 
-Vai ser preciso instalar o [MinGW](http://www.mingw.org/) para compilar o jogo.
+##### Vai ser preciso instalar o [MinGW](http://www.mingw.org/) para compilar o jogo.
 
-Na própria Wiki deles tem um passo-a-passo bem elaborado, clique [aqui](http://www.mingw.org/wiki/Getting_Started) para ver mais.
+##### Na própria Wiki deles tem um passo-a-passo bem elaborado, clique [aqui](http://www.mingw.org/wiki/Getting_Started) para ver mais.
 
-Agora, entre na pasta do repositório com `cd pasta/onde/esta/localizado/Adventum`
+Agora, entre na pasta do repositório com: 
 
-Por fim, compile e execute com os comandos a seguir no diretório do projeto.
+`cd pasta/onde/esta/localizado/Adventum`
 
-gcc main.c knight.c mage.c citizen.c utilities.c
+2. Compile:
 
-a.exe
+`gcc main.c knight.c mage.c citizen.c utilities.c`
+
+3. Rode:
+
+`a.exe`
