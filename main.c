@@ -5,6 +5,13 @@ input validation
 verification name char limit
 critical attack percentage, and block percentage in battles
 inventory
+bestiary
+many kingdoms
+merchants
+random chance of appear a monster
+health points for knights and citizens and mana points for mages
+ability tree
+ascii battle
 history generator
 guilds
 unlock new phrases from conversations with npcs (continue the dialogue based on the previous question)
@@ -12,21 +19,14 @@ kingdom and king name generator
 option for generate protagonist name
 more classes
 race implementation
-monster battle
 pt-br, english support
 -------------------
 weapon selection
-knight: sword, axe, shield
-mage: wand, staff
+knight: sword, axe, shield, two hand weapon(more damage)
+mage: wand, staff, shield, spellbook(more spells)
 -------------------
 continuar, esquerda, direita, voltar
 continue, left, right, back
--------------------
-bestiary
-kingdoms
-merchants
-health points for knights and citizens and mana points for mages
-ability tree
 -------------------
 map displaying position
 
@@ -36,7 +36,37 @@ __________  x . y ascii (generated square)
 |---a----|
 |--------|
 ‾‾‾‾‾‾‾‾‾‾
+you go to the front, then:
+__________
+|--------|  a = you are here
+|---a----|
+|--------|
+|--------|
+‾‾‾‾‾‾‾‾‾‾
 -------------------
+mage:
+ ¢     /          ¢
+-|-   /          -|-  -☆
+/ \  /           / \
+knight:
+   @
+o -|- -|---
+  / \
+citizen:
+ o
+-|-
+/ \
+bosses:
+      ___
+      OOO
+       |
+   _________
+( )\       /( )
+( ) \_____/ ( )
+ O   -----   O
+    / / \ \
+   / /   \ \
+-------------
 */
 
 #include <stdio.h>
