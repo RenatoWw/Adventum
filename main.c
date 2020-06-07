@@ -70,17 +70,17 @@ bosses:
 */
 
 #include <stdio.h>
-#include <unistd.h>
-#include "knight.h"
-#include "mage.h"
-#include "citizen.h"
+#include "knight/knight.h"
 
 void playGame();
 void showHelp();
 
+char name[20];
+int action;
+
 int main() {
     char help;
-    puts("Bem-vindo ao text adventure game feito em C");
+    puts("Bem-vindo ao text adventure game feito em C!");
     puts("Aperte h para mostrar o menu de ajuda e sobre.");
     puts("Aperte qualquer tecla para começar o jogo.");
     help = getchar();
@@ -92,25 +92,25 @@ int main() {
 }
 
 void playGame() {
-    puts("Qual é o nome de seu personagem?");
+    puts("Qual é o nome de seu personagem??");
     printf("> ");
     scanf("%s", name);
-    puts("Escolha uma classe:");
+    puts("Escolha uma classe (por enquanto apenas Caveleiro):");
     puts("1 - Cavaleiro");
-    puts("2 - Mago");
-    puts("3 - Cidadão");
+    // puts("2 - Mago");
+    // puts("3 - Cidadão");
     printf("> ");
     scanf("%d", &action);
     switch(action) {
         case 1:
-        knight(name, action);
+            knight(name, action);
         break;
-        case 2:
-        mage(name, action);
-        break;
-        case 3:
-        citizen(name, action);
-        break;
+        // case 2:
+        // mage(name, action);
+        // break;
+        // case 3:
+        // citizen(name, action);
+        // break;
     }
 }
 
@@ -121,6 +121,5 @@ void showHelp() {
     printf("Como todo projeto \"grande\" não surge de um dia para o outro, vai demorar um pouco para tudo isso ser implementado, mas de pouco em pouco será finalizado. ");
     printf("O código deste jogo pode ser modificado e distribuido livremente, não tem objetivos comerciais, apenas para aprendizado como mencionado anteriormente.\n");
     puts("\nIniciando jogo...");
-    sleep(3);
     playGame();
 }
