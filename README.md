@@ -19,7 +19,7 @@
 
 3. Compile:
 
-`gcc main.c knight.c mage.c citizen.c utilities.c`
+`make`
 
 4. Rode:
 
@@ -41,7 +41,7 @@ Agora, entre na pasta do repositório com:
 
 2. Compile:
 
-`gcc main.c knight.c mage.c citizen.c utilities.c`
+`make`
 
 3. Rode:
 
