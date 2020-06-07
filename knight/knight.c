@@ -8,8 +8,18 @@ void kDog();
 int kTask();
 // k = knight
 
-void knight(char name[20], int action) {
+char name[20];
+int action;
+
+void knight() {
+    /* para limpar o buffer */
+    getchar();
+    printf("Qual vai ser o nome de seu personagem?\n");
+    printf("> ");
+    scanf("%s", name);
     printf("%s é um cavaleiro do reino de Eruthe.\n", name);
+    printf("o resto está sendo arrumado\n");
+    exit(1);
     while(1) {
         puts("Você está no palácio do rei Yeoman Renoldus.");
 
